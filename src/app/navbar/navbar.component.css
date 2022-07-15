@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+.logo_title{
+    
+    font-family: 'Dancing Script', cursive;
+    display: inline-grid;
+    justify-items: stretch;
+    
+}
+
+.logo_title a{
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #082f8a;
+}
+.logo_slog{
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.nav_link_display{
+    padding-left:30px !important;
+    font-size: 1.3rem;
+}
