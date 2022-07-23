@@ -8,28 +8,28 @@
 		  </div>
 		  <div class="col-md-6">
 		    <label for="inputPrenom" class="form-label">Prenom</label>
-		    <input type="text" class="form-control" id="inputPrenom" name="prenom">
+		    <input type="text" class="form-control" id="inputPrenom" [(ngModel)] = "client.prenom" name="prenom">
 		  </div>
 		  <div class="col-12">
 		    <label for="inputAddress" class="form-label">Address</label>
-		    <input type="text" class="form-control" id="inputAddress" name="adresse">
+		    <input type="text" class="form-control" id="inputAddress" [(ngModel)] = "client.adresse" name="adresse">
 		  </div>
 		  <div class="col-md-4">
 		    <label for="inputDate" class="form-label">Date de Naissance</label>
-		    <input type="date" class="form-control" id="inputDate" name="date">
+		    <input type="date" class="form-control" id="inputDate" [(ngModel)] = "client.dateNaissance" name="date">
 		  </div>
 		  <div class="col-md-8">
 		    <label for="inputTel" class="form-label">Telephone</label>
-		    <input type="text" class="form-control" id="inputTel" name="tel">
+		    <input type="text" class="form-control" id="inputTel" [(ngModel)] = "client.tel" name="tel">
 		  </div>
 		  <div class="col-md-8">
 		    <label for="inputEmail4" class="form-label">Email</label>
-		    <input type="email" class="form-control" id="inputEmail4" name="email">
+		    <input type="email" class="form-control" id="inputEmail4" [(ngModel)] = "client.mail" name="email">
 		  </div>
 		  
 		  <div class="col-md-4">
 		    <label for="inputGenre" class="form-label">Civilité</label>
-		    <select id="inputGenre" class="form-select" name="civilite">
+		    <select id="inputGenre" class="form-select" [(ngModel)] = "client.civilite" name="civilite">
 		      <option selected>Choose...</option>
 		      <option value="Mlle.">Mlle.</option>
 		      <option value="Mme.">Mme.</option>
