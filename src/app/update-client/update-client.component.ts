@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Client } from '../Client/client';
 import { ClientService } from '../services/client.service';
 
@@ -12,7 +12,10 @@ export class UpdateClientComponent implements OnInit {
 
   id: number;
   client: Client = new Client();
-  constructor(private clientService: ClientService, private route: ActivatedRoute) { }
+  constructor(
+    private clientService: ClientService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
@@ -23,7 +26,16 @@ export class UpdateClientComponent implements OnInit {
     );
   }
 
-  onSubmit(){
+  goToClientList(){
+    this.router.navigate(['/clients']);
+  }
 
+  onSubmit(){
+    this.clientService.updateClient(this.id, this.client).subscribe( data => {
+
+      this.goToClientList();
+    },
+    error => console.log(error)
+    );
   }
 }

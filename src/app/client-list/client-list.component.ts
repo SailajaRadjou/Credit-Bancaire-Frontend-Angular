@@ -29,4 +29,10 @@ export class ClientListComponent implements OnInit {
     this.router.navigate(['update-client', id]);
   }
 
+  deleteClient(id: number){
+    this.clientService.deleteClient(id).subscribe(data => {
+      console.log(data);      
+      this.getClients();
+    })
+  }
 }
