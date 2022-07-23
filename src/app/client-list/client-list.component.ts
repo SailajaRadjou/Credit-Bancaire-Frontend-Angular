@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Client } from '../Client/client';
 import { ClientService } from '../services/client.service';
 
@@ -10,7 +11,7 @@ import { ClientService } from '../services/client.service';
 export class ClientListComponent implements OnInit {
 
   clients: Client[];
-  constructor(private clientService: ClientService) { }
+  constructor(private clientService: ClientService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -22,6 +23,10 @@ export class ClientListComponent implements OnInit {
     this.clientService.getClientList().subscribe(data => {
       this.clients = data;
     });
+  }
+
+  updateClient(id: number){
+    this.router.navigate(['update-client', id]);
   }
 
 }

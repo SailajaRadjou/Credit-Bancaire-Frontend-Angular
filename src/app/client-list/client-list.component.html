@@ -11,6 +11,7 @@
           <th scope="col">N° de Téléphone</th>
           <th scope="col">Email</th>
           <th scope="col">Civilité</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -23,6 +24,8 @@
           <td>{{client.tel}}</td>
           <td>{{client.mail}}</td>
           <td>{{client.civilite}}</td>
+          <td><a class="btn btn-warning" (click)="updateClient(client.id)">Modifier</a></td>
+          <td><a class="btn btn-danger">Supprimer</a></td>
         </tr>    
       </tbody>
     </table>
