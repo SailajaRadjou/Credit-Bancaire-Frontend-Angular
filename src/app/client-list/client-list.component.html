@@ -26,6 +26,7 @@
           <td>{{client.civilite}}</td>
           <td><a class="btn btn-warning" (click)="updateClient(client.id)">Modifier</a></td>
           <td><a class="btn btn-danger" (click)="deleteClient(client.id)">Supprimer</a></td>
+          <td><a class="btn btn-info" (click)="clientDetails(client.id)">Plus info</a></td>
         </tr>    
       </tbody>
     </table>

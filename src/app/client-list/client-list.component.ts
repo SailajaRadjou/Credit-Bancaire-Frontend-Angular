@@ -35,4 +35,7 @@ export class ClientListComponent implements OnInit {
       this.getClients();
     })
   }
+  clientDetails(id: number){
+    this.router.navigate(['client-details', id]);
+  }
 }

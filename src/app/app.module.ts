@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateClientComponent } from './create-client/create-client.component';
 import { UpdateClientComponent } from './update-client/update-client.component';
+import { ClientDetailsComponent } from './client-details/client-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UpdateClientComponent } from './update-client/update-client.component';
     NavbarComponent,
     FooterComponent,
     CreateClientComponent,
-    UpdateClientComponent
+    UpdateClientComponent,
+    ClientDetailsComponent
   ],
   imports: [
     BrowserModule,
