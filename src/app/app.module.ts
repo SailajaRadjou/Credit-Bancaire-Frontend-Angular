@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateClientComponent } from './create-client/create-client.component';
 import { UpdateClientComponent } from './update-client/update-client.component';
 import { ClientDetailsComponent } from './client-details/client-details.component';
+import { CompteListComponent } from './compte-list/compte-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ClientDetailsComponent } from './client-details/client-details.componen
     FooterComponent,
     CreateClientComponent,
     UpdateClientComponent,
-    ClientDetailsComponent
+    ClientDetailsComponent,
+    CompteListComponent
   ],
   imports: [
     BrowserModule,
